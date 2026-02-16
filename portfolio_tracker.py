@@ -7,9 +7,15 @@ import os
 # Ingresa aquí tus acciones y la cantidad que tienes (Shares)
 # He actualizado SHOP con 1, cámbialo por tu cantidad real.
 mis_acciones = {
-    "NVDA": 9.51376, "META": 0.55874, "VOO": 0.52598, 
-    "GLDM": 6.71521, "IBIT": 8.25082, "AMZN": 0.97603,
-    "SHOP": 1.83032, "DUOL": 3.93319, "SGOV": 5.33698
+    "NVDA": 9.51376,
+    "META": 0.55874,
+    "VOO": 0.76431, 
+    "GLDM": 6.71521,
+    "IBIT": 8.25082, 
+    "AMZN": 0.97603,
+    "SHOP": 1.83032,
+    "SGOV": 5.33698,
+    "DUOL": 3.93319
 }
 
 tickers = list(mis_acciones.keys())
@@ -39,4 +45,5 @@ try:
     print(f"Datos guardados en: {archivo_historial}")
 
 except Exception as e:
+
     print(f"Error al procesar: {e}")
